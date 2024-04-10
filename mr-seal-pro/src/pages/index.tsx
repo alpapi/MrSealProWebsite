@@ -11,11 +11,13 @@ export default function Page() {
             </ul>
         </nav>
 
-        <div className={"grid grid-cols-4 gap-4 justify-center"}>
-            <img className={""} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
-            <img className={""} src="/pics/driveway2.jpg" alt="Picture of paved driveway" />
-            <img className={""} src="/pics/driveway3.jpg" alt="Picture of paved driveway" />
-            <img className={""} src="/pics/driveway4.jpg" alt="Picture of paved driveway" />
+        <div className={"grid  md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center p-5"}>
+            <img className={"h-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
+            <img className={"h-auto"} src="/pics/driveway2.jpg" alt="Picture of paved driveway" />
+            <img className={"h-auto w-auto"} src="/pics/driveway3.jpg" alt="Picture of paved driveway" />
+            <img className={"h-auto"} src="/pics/driveway4.jpg" alt="Picture of paved driveway" />
+            <img className={"h-auto"} src="/pics/driveway5.jpg" alt="Picture of paved driveway" />
+            <img className={"h-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
         </div>
     </div> // THIS IS WHERE ALL OF THE CONTENT FOR THE PAGE GOES (inside of the div starting at return)
 
