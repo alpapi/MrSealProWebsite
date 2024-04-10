@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+
 const myVar = "String thingy"
 export default function Document() {
     return (
@@ -8,6 +9,7 @@ export default function Document() {
                 <meta charSet="utf-8" />
             </Head>
             <body>
+
             <Main />
             <NextScript />
             </body>
