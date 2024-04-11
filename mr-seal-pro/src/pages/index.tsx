@@ -68,7 +68,82 @@ export default function Page() {
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+            <div className="mx-auto max-w-3xl">{/* Content goes here */}
+                <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center p-5"}>
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/sun.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Sun Block</span>
+                            <br />
+                            <br />
+                            Sealcoating prevents asphalt surface oxidation by forming a tough protective outer skin
+                        </p>
+                    </div>
+
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/raindrop.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Weather Proof</span>
+                            <br />
+                            <br />
+                            Sealcoating seals the porous asphalt surface, preventing damaging water penetration
+                        </p>
+                    </div>
+
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/beaker.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Resists Gas and Oil</span>
+                            <br />
+                            <br />
+                            Sealers protect asphalt from the deteriorating effects of gasoline, oil, de-icers and other harsh chemicals
+                        </p>
+                    </div>
+
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/flower.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Restores Appearance</span>
+                            <br />
+                            <br />
+                            Sealers provide the jet black finish adn fresh, new appearance that improves the image of any home or business
+                        </p>
+                    </div>
+
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/broom.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Low Maintenance</span>
+                            <br />
+                            <br />
+                            Sealers provides a smooth, even surface that facilitates cleaning and maintenance
+                        </p>
+                    </div>
+
+                    <div>
+                        <img className={"h-auto mx-auto"} src={"/pics/dollarsign.png"} />
+                        <p className={"text-center"}>
+                            <span className={"font-bold text-red-500 text-xl"}>Saves Money</span>
+                            <br />
+                            <br />
+                            Avoid expensive asphalt replacement by spending a few cents per square foot on professional driveway sealcoating my Mr. Seal Pro
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-10xl">
                 <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center p-5"}>
                     <img className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />

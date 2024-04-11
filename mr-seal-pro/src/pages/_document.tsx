@@ -11,9 +11,9 @@ export default function Document() {
                 <meta name="description" content="The Driveway Sealcoating Professional"/>
                 <meta name="keywords" content="MrSealPro, pavement, quality, reliability"/>
                 <meta name="author" content="Alex Rapp"/>
-                <link rel={"icon"} href={"pics/logo.png"}/>
+                <link rel={"icon"} href={"pics/logoUpdated.png"}/>
             </Head>
-            <body>
+            <body className={"bg-gray-100"}>
 
             <Main />
             <NextScript />
