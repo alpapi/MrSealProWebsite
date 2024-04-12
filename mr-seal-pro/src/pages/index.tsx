@@ -57,46 +57,39 @@ export default function Page() {
             )}
         </Disclosure>
 
-        <div className="bg-gradient-to-r from-yellow-300 to-blue-400 px-6 py-24 sm:py-32 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-                <p className="text-base font-semibold leading-7 text-indigo-600">The Driveway Sealcoating Professional</p>
-                <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Mr. Seal Pro</h2>
-                <p className="mt-6 text-lg leading-8 text-gray-900 font-semibold">
-                    Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
-                </p>
-            </div>
-        </div>
-
-        <div className="relative bg-white">
-            <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
-                <div className="px-6 pb-24 pt-10 sm:pb-32 lg:col-span-7 lg:px-0 lg:pb-56 lg:pt-38 xl:col-span-6">
-                    <div className="mx-auto max-w-2xl lg:mx-0">
-                        <div className="hidden sm:mt-32 sm:flex lg:mt-16">
-
-                        </div>
-                        <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">
-                            Mr. Seal Pro uses SealMaster Products
-                        </h1>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Ensure the best possible performance out of your driveway. Learn how the SealMaster products we use can help your pavement
+        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+            <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"/>
+            <div className="mx-auto max-w-7xl px-6 sm:py-20 lg:px-8">
+                <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+                    <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
+                        Mr. Seal Pro - The Driveway Sealcoating Professional
+                    </h1>
+                    <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
+                        <p className="text-lg leading-8 text-red-500 font-semibold">
+                            Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
-                        <div className="mt-10 flex items-center gap-x-6">
-                            <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                                Learn more <span aria-hidden="true">→</span>
-                            </a>
-                        </div>
                     </div>
+                    <img src="/pics/headerbg.jpg" alt="Paved driveway"
+                        className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+                    />
                 </div>
             </div>
+            <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
         </div>
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h1 className="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl text-center">
+                Mr. Seal Pro uses SealMaster Products
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-indigo-500 text-center font-semibold">
+                We use SealMaster products to ensure your driveway is fully protected
+            </p>
             <div className="mx-auto max-w-3xl">{/* Content goes here */}
                 <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center p-5"}>
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/sun.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Sun Block</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Sun Block</span>
                             <br />
                             <br />
                             Sealcoating prevents asphalt surface oxidation by forming a tough protective outer skin
@@ -106,7 +99,7 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/raindrop.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Weather Proof</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Weather Proof</span>
                             <br />
                             <br />
                             Sealcoating seals the porous asphalt surface, preventing damaging water penetration
@@ -116,7 +109,7 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/beaker.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Resists Gas and Oil</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Resists Gas and Oil</span>
                             <br />
                             <br />
                             Sealers protect asphalt from the deteriorating effects of gasoline, oil, de-icers and other harsh chemicals
@@ -126,7 +119,7 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/flower.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Restores Appearance</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Restores Appearance</span>
                             <br />
                             <br />
                             Sealers provide the jet black finish adn fresh, new appearance that improves the image of any home or business
@@ -136,7 +129,7 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/broom.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Low Maintenance</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Low Maintenance</span>
                             <br />
                             <br />
                             Sealers provides a smooth, even surface that facilitates cleaning and maintenance
@@ -146,7 +139,7 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/dollarsign.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-red-500 text-xl"}>Saves Money</span>
+                            <span className={"font-bold text-indigo-500 text-xl"}>Saves Money</span>
                             <br />
                             <br />
                             Avoid expensive asphalt replacement by spending a few cents per square foot on professional driveway sealcoating my Mr. Seal Pro
