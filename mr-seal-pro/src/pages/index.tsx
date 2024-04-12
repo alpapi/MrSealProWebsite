@@ -149,7 +149,7 @@ export default function Page() {
             </div>
         </div>
 
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/*<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-10xl">
                 <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center p-5"}>
                     <img className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
@@ -160,7 +160,7 @@ export default function Page() {
                     <img className={"h-auto mx-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
                 </div>
             </div>
-        </div>
+        </div>*/}
     </div> // THIS IS WHERE ALL OF THE CONTENT FOR THE PAGE GOES (inside of the div starting at return)
 
 }
