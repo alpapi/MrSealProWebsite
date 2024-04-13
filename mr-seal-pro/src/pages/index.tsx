@@ -66,7 +66,7 @@ export default function Page() {
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                         <p className="text-lg leading-8 text-gray-500 font-semibold">
-                            Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
+                            Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
                     </div>
                     <img src="/pics/headerbg.jpg" alt="Paved driveway"
@@ -122,7 +122,7 @@ export default function Page() {
                             <span className={"font-bold text-indigo-500 text-xl"}>Restores Appearance</span>
                             <br />
                             <br />
-                            Sealers provide the jet black finish adn fresh, new appearance that improves the image of any home or business
+                            Sealers provide the jet black finish and fresh, new appearance that improves the image of any home or business
                         </p>
                     </div>
 
