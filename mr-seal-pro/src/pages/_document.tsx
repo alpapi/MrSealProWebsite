@@ -13,7 +13,7 @@ export default function Document() {
                 <meta name="author" content="Alex Rapp"/>
                 <link rel={"icon"} href={"pics/logoUpdated.png"}/>
             </Head>
-            <body className={"bg-gray-100"}>
+            <body>
 
             <Main />
             <NextScript />
