@@ -7,7 +7,7 @@ import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/
 
 export default function Page() {
     return <div>
-        <Disclosure as="nav" className="bg-gray-900">
+        <Disclosure as="nav" className="bg-gray-800">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
