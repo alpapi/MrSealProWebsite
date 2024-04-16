@@ -7,7 +7,7 @@ import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/
 
 export default function Page() {
     return <div>
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-zinc-800">
             {({ open }) => (
                 <>
                     <div className="max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -79,7 +79,7 @@ export default function Page() {
         </div>
 
         <span id={"productsJump"}></span>
-        <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-gray-800 via-gray-600 to-gray-900">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-zinc-800 via-gray-600 to-zinc-800">
             <h1 className="mt-24 text-4xl font-bold tracking-tight text-slate-50 sm:mt-10 sm:text-6xl text-center p-10">
                 SealMaster Products
             </h1>
