@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image';
+import { Fragment } from 'react';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/solid";
-
+import '../index.js';
 
 export default function Page() {
     return <div> {/* Everything has to go in this div to display on the website */}
@@ -72,11 +72,27 @@ export default function Page() {
                             Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
                     </div>
-                    <img src="/pics/headerbg.jpg" alt="Paved driveway"
+                    <img id="mainpic" src="/pics/headerbg.jpg" alt="Paved driveway"
                         className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 sm:m-auto"
                     />
                 </div>
             </div>
+
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> {/* Gallery Section */}
+                <div className="mx-auto max-w-10xl">
+                    <div className={"grid grid-cols-6 gap-4 justify-center p-5"}>
+                        <img id="driveway1" className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
+                        <img id="driveway2"
+                             onClick={() => {changePic()}}
+                             className={"h-auto mx-auto"} src="/pics/driveway2.png" alt="Picture of paved driveway" />
+                        <img id="driveway3" className={"h-auto mx-auto"} src="/pics/driveway3.png" alt="Picture of paved driveway" />
+                        <img id="driveway4" className={"h-auto mx-auto"} src="/pics/driveway4.png" alt="Picture of paved driveway" />
+                        <img id="driveway5" className={"h-auto mx-auto"} src="/pics/driveway5.png" alt="Picture of paved driveway" />
+                        <img id="driveway6" className={"h-auto mx-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
+                    </div>
+                </div>
+            </div> {/* Gallery Section */}
+
             <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
         </div> {/* Main header section */}
 
@@ -154,7 +170,7 @@ export default function Page() {
         </div> {/* Seal Master Products Section*/}
 
         <span id={"contactJump"}></span>
-        <div className="relative isolate bg-white">
+        <div className="relative isolate bg-gradient-to-t from-zinc-300 via-zinc-100 to-zinc-300">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -309,7 +325,7 @@ export default function Page() {
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
                 <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 text-gray-300" aria-label="Footer">
 
-                    <p>
+                    <p className={"font-semibold"}>
                         <a href={"#top"}><span className={"md:mr-6"}>Home</span></a> &#8226;
                         <a href={"#productsJump"}><span className={"md:ml-6 md:mr-6"}>Products</span></a> &#8226;
                         <a href={"#contactJump"}><span className={"md:ml-6 md:mr-6"}>Contact</span></a> &#8226;
@@ -322,20 +338,7 @@ export default function Page() {
                     &copy; 2024 Mr. Seal Pro - All rights reserved.
                 </p>
             </div>
-        </footer>
-
-        {/*<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-10xl">
-                <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center p-5"}>
-                    <img className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
-                    <img className={"h-auto mx-auto"} src="/pics/driveway2.png" alt="Picture of paved driveway" />
-                    <img className={"h-auto mx-auto"} src="/pics/driveway3.png" alt="Picture of paved driveway" />
-                    <img className={"h-auto mx-auto"} src="/pics/driveway4.png" alt="Picture of paved driveway" />
-                    <img className={"h-auto mx-auto"} src="/pics/driveway5.png" alt="Picture of paved driveway" />
-                    <img className={"h-auto mx-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
-                </div>
-            </div>
-        </div>*/}
+        </footer> {/* Footer Section */}
     </div>
 
 }
