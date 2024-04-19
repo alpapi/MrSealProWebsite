@@ -6,7 +6,8 @@ import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/
 
 
 export default function Page() {
-    return <div>
+    return <div> {/* Everything has to go in this div to display on the website */}
+        <span id={"top"}></span>
         <Disclosure as="nav" className="bg-gray-700">
             {({ open }) => (
                 <>
@@ -19,8 +20,8 @@ export default function Page() {
                                 <div className="hidden sm:ml-6 sm:block">
                                     <div className="flex space-x-4">
                                         <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-white">Home</a>
-                                        <a href="#contactJump" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Contact</a>
                                         <a href="#productsJump" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Products</a>
+                                        <a href="#contactJump" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-white">Contact</a>
                                     </div>
                                 </div>
                             </div>
@@ -46,11 +47,11 @@ export default function Page() {
                             <Disclosure.Button as="a" href="#" className="block rounded-md bg-gray-100 px-3 py-2 text-base font-medium text-gray-900">
                                 Home
                             </Disclosure.Button>
-                            <Disclosure.Button as="a" href="#contactJump" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-100 hover:text-gray-900">
-                                Contact
-                            </Disclosure.Button>
                             <Disclosure.Button as="a" href="#productsJump" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-100 hover:text-gray-900">
                                 Products
+                            </Disclosure.Button>
+                            <Disclosure.Button as="a" href="#contactJump" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-100 hover:text-gray-900">
+                                Contact
                             </Disclosure.Button>
                         </div>
                     </Disclosure.Panel>
@@ -62,21 +63,22 @@ export default function Page() {
             <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"/>
             <div className="mx-auto max-w-7xl px-6 sm:py-20 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-                    <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
+                    <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto text-center">
                         Mr. Seal Pro - The Driveway Sealcoating Professional
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                        <p className="text-lg leading-8 text-gray-500 font-semibold">
+                        <p className="text-lg text-center leading-8 text-gray-500 font-semibold ml-16">
+                            <p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold ml-16"}>Est. 1998</p>
                             Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
                     </div>
                     <img src="/pics/headerbg.jpg" alt="Paved driveway"
-                        className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+                        className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 sm:m-auto"
                     />
                 </div>
             </div>
             <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
-        </div>
+        </div> {/* Main header section */}
 
         <span id={"productsJump"}></span>
         <div className="mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-zinc-800 via-zinc-600 to-zinc-800">
@@ -303,6 +305,25 @@ export default function Page() {
             </div>
         </div> {/* Contact Section */}
 
+        <footer className="bg-zinc-800">
+            <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+                <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 text-gray-300" aria-label="Footer">
+
+                    <p>
+                        <a href={"#top"}><span className={"md:mr-6"}>Home</span></a> &#8226;
+                        <a href={"#productsJump"}><span className={"md:ml-6 md:mr-6"}>Products</span></a> &#8226;
+                        <a href={"#contactJump"}><span className={"md:ml-6 md:mr-6"}>Contact</span></a> &#8226;
+                        <a href={"https://sealmaster.net/products/"}><span className={"md:ml-6"}>SealMaster Products</span></a> {/* SealMaster link causes hydration errors. Remove link to fix, but doesn't seem like a problem*/}
+                    </p>
+                </nav>
+                <img src={"pics/logoUpdated.png"} className={"h-20 w-auto m-auto mt-10"}/>
+
+                <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+                    &copy; 2024 Mr. Seal Pro - All rights reserved.
+                </p>
+            </div>
+        </footer>
+
         {/*<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-10xl">
                 <div className={"grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center p-5"}>
@@ -315,6 +336,6 @@ export default function Page() {
                 </div>
             </div>
         </div>*/}
-    </div> // THIS IS WHERE ALL OF THE CONTENT FOR THE PAGE GOES (inside of the div starting at return)
+    </div>
 
 }
