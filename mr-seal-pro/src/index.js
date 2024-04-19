@@ -2,6 +2,6 @@
 
 }*/
 
-function changePic(){
+/*function changePic(){
     alert("changePic function ran");
-}
+}*/
