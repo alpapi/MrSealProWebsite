@@ -67,8 +67,8 @@ export default function Page() {
                         Mr. Seal Pro - The Driveway Sealcoating Professional
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                        <p className="text-lg text-center leading-8 text-gray-500 font-semibold ml-16">
-                            <p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold ml-16"}>Est. 1998</p>
+                        <p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold sm:ml-16"}>Est. 1998</p>
+                        <p className="text-lg text-center leading-8 text-gray-500 font-semibold sm:ml-16">
                             Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
                     </div>
