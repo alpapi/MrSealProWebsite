@@ -82,11 +82,11 @@ export default function Page() {
                 <div className="mx-auto max-w-10xl">
                     <div className={"grid grid-cols-6 gap-4 justify-center p-5"}>
                         <img id="driveway1" className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
-                        <img id="driveway2" className={"h-auto mx-auto"} src="/pics/driveway2.png" alt="Picture of paved driveway" />
-                        <img id="driveway3" className={"h-auto mx-auto"} src="/pics/driveway3.png" alt="Picture of paved driveway" />
-                        <img id="driveway4" className={"h-auto mx-auto"} src="/pics/driveway4.png" alt="Picture of paved driveway" />
-                        <img id="driveway5" className={"h-auto mx-auto"} src="/pics/driveway5.png" alt="Picture of paved driveway" />
-                        <img id="driveway6" className={"h-auto mx-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
+                        <img id="driveway2" className={"h-auto mx-auto"} src="/pics/driveway2.PNG" alt="Picture of paved driveway" />
+                        <img id="driveway3" className={"h-auto mx-auto"} src="/pics/driveway3.PNG" alt="Picture of paved driveway" />
+                        <img id="driveway4" className={"h-auto mx-auto"} src="/pics/driveway4.PNG" alt="Picture of paved driveway" />
+                        <img id="driveway5" className={"h-auto mx-auto"} src="/pics/driveway5.PNG" alt="Picture of paved driveway" />
+                        <img id="driveway6" className={"h-auto mx-auto"} src="/pics/driveway6.PNG" alt="Picture of paved driveway" />
                     </div>
                 </div>
             </div> {/* Gallery Section */}
@@ -318,19 +318,6 @@ export default function Page() {
                 </form>
             </div>
         </div> {/* Contact Section */}
-
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> {/* Gallery Section */}
-            <div className="mx-auto max-w-10xl">
-                <div className={"grid grid-cols-6 gap-4 justify-center p-5"}>
-                    <img id="driveway1" className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
-                    <img id="driveway2" className={"h-auto mx-auto"} src="/pics/driveway2.png" alt="Picture of paved driveway" />
-                    <img id="driveway3" className={"h-auto mx-auto"} src="/pics/driveway3.png" alt="Picture of paved driveway" />
-                    <img id="driveway4" className={"h-auto mx-auto"} src="/pics/driveway4.png" alt="Picture of paved driveway" />
-                    <img id="driveway5" className={"h-auto mx-auto"} src="/pics/driveway5.png" alt="Picture of paved driveway" />
-                    <img id="driveway6" className={"h-auto mx-auto"} src="/pics/driveway6.png" alt="Picture of paved driveway" />
-                </div>
-            </div>
-        </div> {/* Gallery Section */}
 
         <footer className="bg-zinc-800">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
