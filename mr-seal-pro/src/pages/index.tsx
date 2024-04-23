@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/solid";
 import { useState } from 'react';
 
-const picArray = ['/pics/driveway1.jpg', '/pics/driveway2.png', '/pics/driveway3.png', '/pics/driveway4.png', '/pics/driveway5.png', '/pics/driveway6.png'];
+const picArray = ['/pics/driveway1.jpg', '/pics/driveway2.PNG', '/pics/driveway3.PNG', '/pics/driveway4.PNG', '/pics/driveway5.PNG', '/pics/driveway6.PNG'];
 
 export default function Page() {
 
