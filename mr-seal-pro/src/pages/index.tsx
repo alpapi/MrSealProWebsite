@@ -1,12 +1,27 @@
 import Image from 'next/image';
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/solid";
-import '../index.js';
+import { useState } from 'react';
+
+const picArray = ['/pics/driveway1.jpg', '/pics/driveway2.png', '/pics/driveway3.png', '/pics/driveway4.png', '/pics/driveway5.png', '/pics/driveway6.png'];
 
 export default function Page() {
+
+    const [srcImg, setSrcImg] = useState(picArray[0]);
+
+    function changePic(src: string){
+        setSrcImg(src);
+    }
+
+    let imgElements = picArray.map(function(image){
+        return <img src={image} alt={"Paved driveway picture"} className={"h-auto mx-auto"} onClick={() => changePic(image)} key={image}/>;
+    });
+
     return <div> {/* Everything has to go in this div to display on the website */}
+
+
         <span id={"top"}></span>
         <Disclosure as="nav" className="bg-gray-700">
             {({ open }) => (
@@ -59,7 +74,8 @@ export default function Page() {
             )}
         </Disclosure>
 
-        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
+
+        <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20 pt-14">
             <div className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 lg:-mr-96" aria-hidden="true"/>
             <div className="mx-auto max-w-7xl px-6 sm:py-20 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
@@ -72,7 +88,7 @@ export default function Page() {
                             Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
                     </div>
-                    <img id="mainpic" src="/pics/headerbg.jpg" alt="Paved driveway"
+                    <img src={srcImg} alt="Paved driveway"
                         className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36 sm:m-auto"
                     />
                 </div>
@@ -81,12 +97,11 @@ export default function Page() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"> {/* Gallery Section */}
                 <div className="mx-auto max-w-10xl">
                     <div className={"grid grid-cols-6 gap-4 justify-center p-5"}>
-                        <img id="driveway1" className={"h-auto mx-auto"} src="/pics/driveway1.jpg" alt="Picture of paved driveway" />
-                        <img id="driveway2" className={"h-auto mx-auto"} src="/pics/driveway2.PNG" alt="Picture of paved driveway" />
-                        <img id="driveway3" className={"h-auto mx-auto"} src="/pics/driveway3.PNG" alt="Picture of paved driveway" />
-                        <img id="driveway4" className={"h-auto mx-auto"} src="/pics/driveway4.PNG" alt="Picture of paved driveway" />
-                        <img id="driveway5" className={"h-auto mx-auto"} src="/pics/driveway5.PNG" alt="Picture of paved driveway" />
-                        <img id="driveway6" className={"h-auto mx-auto"} src="/pics/driveway6.PNG" alt="Picture of paved driveway" />
+                        {
+                            picArray.map(function(image){
+                                return <img src={image} alt={"Paved driveway picture"} className={"h-auto mx-auto"} onClick={() => changePic(image)} key={image}/>;
+                            })
+                        } {/* The JavaScript here is to make it so that you don't have to assign it to a variable */}
                     </div>
                 </div>
             </div> {/* Gallery Section */}
@@ -337,6 +352,6 @@ export default function Page() {
                 </p>
             </div>
         </footer> {/* Footer Section */}
-    </div>
 
+    </div>
 }
