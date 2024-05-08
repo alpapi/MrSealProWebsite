@@ -80,10 +80,10 @@ export default function Page() {
             <div className="mx-auto max-w-7xl px-6 sm:py-20 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
                     <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto text-center">
-                        Mr. Seal Pro - The Driveway Sealcoating Professional
+                        <span className={"text-red-500"}>Mr. Seal Pro</span> - The Driveway Sealcoating Professional
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                        <p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold sm:ml-16"}>Est. 1999</p>
+                        {/*<p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold sm:ml-16"}>Est. 1999</p>*/}
                         <p className="text-lg text-center leading-8 text-gray-600 font-semibold sm:ml-16">
                             Commercial &#8226; Residential &#8226; Driveways &#8226; Parking Lots &#8226; Hot Crack Sealing &#8226; Pot Holes Repaired &#8226; Line Striping
                         </p>
@@ -172,10 +172,10 @@ export default function Page() {
                     <div>
                         <img className={"h-auto mx-auto"} src={"/pics/dollarsign.png"} />
                         <p className={"text-center"}>
-                            <span className={"font-bold text-yellow-300 text-xl"}>Saves Money</span>
+                            <span className={"font-bold text-yellow-300 text-xl"}>Save Money</span>
                             <br />
                             <br />
-                            <span className={"text-slate-200"}>Avoid expensive asphalt replacement by spending a few cents per square foot on professional driveway sealcoating my Mr. Seal Pro</span>
+                            <span className={"text-slate-200"}>Avoid expensive asphalt replacement by spending a few cents per square foot on professional driveway sealcoating by Mr. Seal Pro</span>
                         </p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Page() {
             <div></div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-20 lg:mb-0 text-center lg:text-start col-span-2">
                 <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Owned and Operated since 1999</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Operated since 1999</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-600">
                         Servicing clients in the Upper Bucks County area. Operating as a fully licensed and insured sealcoating company in Pennsylvania.
                     </p>
@@ -235,23 +235,21 @@ export default function Page() {
                     </div>
                 </dl>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Available in the Upper Bucks County Area
-                    <br />
-                    Email or Call for a free quote
+                    Email or Call for a free estimate
                 </p>
             </div>
         </div> {/* Contact Section */}
 
         <footer className="bg-zinc-800">
             <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-                <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12 text-gray-300" aria-label="Footer">
+                <nav className="mb-6 sm:flex sm:justify-center sm:space-x-12 text-gray-300" aria-label="Footer">
 
-                    <p className={"font-semibold"}>
-                        <a href={"#top"}><span className={"md:mr-6"}>Home</span></a> &#8226;
-                        <a href={"#productsJump"}><span className={"md:ml-6 md:mr-6"}>Products</span></a> &#8226;
-                        <a href={"#contactJump"}><span className={"md:ml-6 md:mr-6"}>Contact</span></a> &#8226;
-                        <a href={"https://sealmaster.net/products/"}><span className={"md:ml-6"}>SealMaster Products</span></a> {/* SealMaster link causes hydration errors. Remove link to fix, but doesn't seem like a problem*/}
-                    </p>
+                    <div className={"font-semibold"}>
+                        <a href={"#top"}><span className={"sm:mr-6"}>Home</span></a> &#8226;
+                        <a href={"#productsJump"}><span className={"sm:ml-6 sm:mr-6"}> Products</span></a> &#8226;
+                        <a href={"#contactJump"}><span className={"sm:ml-6 sm:mr-6"}> Contact</span></a> &#8226;
+                        <a href={"https://sealmaster.net/products/"}><span className={"sm:ml-6"}> SealMaster Products</span></a> {/* SealMaster link causes hydration errors. Remove link to fix, but doesn't seem like a problem*/}
+                    </div>
                 </nav>
                 <img src={"pics/logoUpdated.png"} className={"h-20 w-auto m-auto mt-10"}/>
 
