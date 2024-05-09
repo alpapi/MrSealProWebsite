@@ -182,9 +182,10 @@ export default function Page() {
             </div>
 
             <div className={"flex justify-center p-10"}>
-                <a href={"https://sealmaster.net/products/"}><button
+                <a href={"https://sealmaster.net/products/"}>
+                    <button
                     type="button"
-                    className=" rounded-md bg-yellow-300 px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                    className=" rounded-md bg-yellow-300 px-5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-inset ring-gray-300 hover:bg-gray-50">
                     Learn More 	&rarr;
                 </button></a>
             </div>
