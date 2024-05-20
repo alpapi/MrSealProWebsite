@@ -80,7 +80,7 @@ export default function Page() {
             <div className="mx-auto max-w-7xl px-6 sm:py-20 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
                     <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto text-center">
-                        <span className={"text-red-500"}>Mr. Seal Pro</span> - The Driveway Sealcoating Professional
+                        <span className={"text-red-500"}>Mr. Seal Pro</span><br /> The Driveway Sealcoating Professional
                     </h1>
                     <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                         {/*<p className={"text-lg text-center font-bold leading-8 text-gray-900 font-semibold sm:ml-16"}>Est. 1999</p>*/}
@@ -214,12 +214,12 @@ export default function Page() {
                         </dt>
                         <dd>
                             <a className="hover:text-gray-900 font-semibold" href="tel:610-982-5840">
-                                Upper Black Eddy: 610-982-5840
+                                Upper Black Eddy: <br /> 610-982-5840
                             </a>
                         </dd>
                         <dd>
                             <a className="hover:text-gray-900 font-semibold" href="tel:215-345-4955">
-                                Doylestown: 215-345-4955
+                                Doylestown: <br /> 215-345-4955
                             </a>
                         </dd>
                     </div>
