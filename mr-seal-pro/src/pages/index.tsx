@@ -5,7 +5,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import {BuildingOffice2Icon, EnvelopeIcon, PhoneIcon} from "@heroicons/react/16/solid";
 import { useState } from 'react';
 
-const picArray = ['/pics/timmydw1.jpg', '/pics/timmydw2.jpg', '/pics/driveway3.PNG', '/pics/driveway4.PNG', '/pics/driveway5.PNG', '/pics/driveway6.PNG'];
+const picArray = ['/pics/timmydw1.jpg', '/pics/timmydw2.jpg', '/pics/timmydw3.jpg', '/pics/timmydw4.jpg', '/pics/driveway5.PNG', '/pics/driveway6.PNG'];
 
 export default function Page() {
 
@@ -16,7 +16,7 @@ export default function Page() {
     }
 
     let imgElements = picArray.map(function(image){
-        return <img src={image} alt={"Paved driveway picture"} className={"h-auto mx-auto"} onClick={() => changePic(image)} key={image}/>;
+        return <img src={image} alt={"Paved driveway picture"} className={""} onClick={() => changePic(image)} key={image}/>;
     });
 
     return <div> {/* Everything has to go in this div to display on the website */}
